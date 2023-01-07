@@ -1,0 +1,615 @@
+html {
+  background: linear-gradient(to left, #117d71, #083c37);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+}
+
+#wrap {
+  min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
+  background: url("../img/cloud.png"), url("../img/sea.png"), url("../img/sand.png"), url("../img/sky.png"), black;
+  background-repeat: repeat-y, repeat-x, repeat-x, repeat, repeat;
+  background-position: -200px -200px, bottom 100px center, bottom center, 0 0, 0
+}
+
+#main {
+  color: black;
+  padding-top: 1em;
+}
+
+#main .popover-content,
+#main .popover-title {
+  color: black;
+}
+
+#main .form-actions {
+  background: inherit;
+  border: none;
+  padding: 0px;
+}
+
+#main .well {
+  color: black;
+}
+
+#main .well:after {
+  /* ensure wells contain all their floating content */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main h1 {
+  margin: 0;
+  padding: 0 24px;
+  line-height: 47px;
+  background-color: black;
+  background-image: linear-gradient(to left, #117d71, #083c37);
+  font-family: 'Oswald';
+  font-size: 30px;
+  font-weight: bold;
+  color: #16cebb;
+}
+
+#main section {
+  width: 100%;
+  float: left;
+  padding: 0 10px 10px 10px;
+  color: black;
+  background: #ece0b2;
+  margin-bottom: 1em;
+  background-image: linear-gradient(to left, #f7f4e6, #ece0b2);
+  border-radius: 25px;
+}
+
+#main section section {
+  background: rgba(247, 244, 230, 0.75);
+  box-shadow: 2px 2px 15px -5px #ce162f;
+}
+
+#main section h1,
+#main section section h2 {
+  margin: 0 -10px;
+  padding: 0 24px;
+  background-color: black;
+  background-image: linear-gradient(to left, #ce162f, #5e141e);
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: #ffc600;
+  margin-bottom: 0.5em;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#main section h1 {
+  line-height: 47px;
+  font-size: 30px;
+}
+
+#main section h2 {
+  font-family: 'Oswald';
+}
+
+#main section p {
+  padding-left: 12px;
+}
+
+#main li p {
+  padding-left: 0;
+}
+
+#main table {
+  width: 100%;
+}
+
+#main table tr {
+  border-bottom: 1px solid #67938d;
+}
+
+#main table th,
+#main table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #67938d;
+  background: #f7f4e6;
+  font-size: 16px;
+  color: black;
+}
+
+#main table td.title {
+  background-color: black;
+  background-image: linear-gradient(to left, #117d71, #083c37);
+  border: 1px solid #a49a77;
+  font-size: 16px;
+  color: #ffc600;
+  line-height: 26px;
+}
+
+#main table th,
+#main table td.scheduleslot {
+  background: #117d71;
+  color: white;
+  border: 1px solid #a49a77;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+#main table th a {
+  color: white;
+}
+
+#main table td a {
+  color: #083c37;
+}
+
+#main table td.title a {
+  color: #ffc600;
+}
+
+#main table td a:hover {
+  color: #117d71;
+}
+
+#main table th a:hover,
+#main table td.title a:hover {
+  color: #16cebb;
+}
+
+#main table th span {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  line-height: 26px;
+}
+
+#notes a {
+  color: #083c37;
+}
+
+/* Highlights */
+
+#main table td.schedule {
+  background: #f7f4e6;
+  border: solid 1px #67938d;
+}
+
+#main table td.schedule-break {
+  background: #a49a77;
+  color: #67938d;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#main table td.talk-type-keynote {
+  background: #f7f4e6;
+  background-image: linear-gradient(to left, #16cebb, #ff0023);
+  text-align: center;
+}
+
+#main table td.talk-type-panel {
+  background: #f7f4e6;
+  background-image: linear-gradient(to left, #16cebb, #ece0b2);
+  text-align: center;
+}
+
+#main table td.unavailable {
+  background: #67938d;
+  font-size: 16px;
+  color: #c6e9e5;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#main table th.schedule-highlight-venue {
+   filter: brightness(150%);
+}
+
+#main table td.schedule-highlight-venue a {
+   color: #16cebb;
+}
+
+/* We unset the highlight-venue effect for breaks using CSS ordering */
+#main table td.schedule-break a {
+  color: #f7f4e6;
+}
+
+#main table td.schedule-break a:hover {
+  color: #ece0b2;
+}
+
+#main table td.talk-type-keynote a,
+#main table td.talk-type-panel a {
+  color: #083c37;
+}
+
+#main table td.talk-type-keynote a:hover,
+#main table td.talk-type-panel a:hover {
+  color: #f7f4e6;
+}
+
+#main table td.schedule-placeholder {
+  background: repeating-linear-gradient(135deg, #d6f7f3, #d6f7f3 10px, #c6e9e5 10px, #c6e9e5 20px);
+  border: solid 1px #67938d;
+}
+
+#main table td.schedule-placeholder a {
+  color: #67938d;
+}
+
+#main table td.schedule-placeholder a:hover {
+  color: #083c37;
+}
+
+#main table td.unavailable a {
+  color: #c6e9e5;
+}
+
+#logos {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logos img {
+  padding: 10px 20px;
+}
+
+#legal {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 30px;
+  color: black;
+  padding-bottom: 15px;
+}
+
+#credits {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 20px;
+  color: #ce162f;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+#credits a {
+  color: #117d71;
+}
+
+#logo_bottom {
+  /* this padding needs to be big enough to avoid clouds_bottom.png covering text. */
+  padding-bottom: 199px;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: black;
+  color: #ce162f;
+  width: 100%;
+  clear: both;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+#wafer-edit-schedule-bucket {
+  background: #ccc;
+}
+
+.wafer-speakers .wafer-speakers-logo img {
+  border-radius: 50%;
+  border: 4px dashed #117d71;
+  padding: 10px;
+}
+
+.wafer-speakers .wafer-speakers-logo {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.wafer-speakers .wafer-speakers-name {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+.wafer-profile #profile-avatar {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.wafer-profile #profile-avatar img {
+  border-radius: 50%;
+  border: 4px dashed #117d71;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+h3.card-title {
+    font-family: 'Oswald';
+}
+
+.wafer.list div:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.wafer.list div:nth-child(2n + 1) {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+/* Talks on profile pages */
+
+.card {
+    background: #f7f4e6;
+    border-radius: 25px;
+}
+
+.card a {
+    color: #083c37;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #ce162f;
+}
+
+/* fix icons on top nav bar */
+ul.navbar-nav li.icon a {
+  padding: 12px;
+}
+
+/* override buttons */
+
+ul.btn-group {
+  list-style: none;
+}
+
+.btn-primary {
+  margin: 0 0 2px 2px;
+  background-color: #117d71;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #5e141e;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #117d71;
+  text-shadow: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #a49a77;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary {
+  margin: 0 0 4px 4px;
+  background-color: #117d71;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #5e141e;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.btn-secondary.disabled,
+.btn-secondary[disabled] {
+  background-color: #a49a77;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  color: #5e141e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.btn, table a, nav a, #wafer-sponsors a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ce162f;
+}
+
+#main section a, #main section section a {
+  color: #083c37;
+}
+
+#main section a:hover,
+#main section a:focus,
+#main section section a:hover,
+#main section section a:focus {
+  color: #ce162f;
+}
+
+#main section h1 a, #main section section h2 a {
+  color: #16cebb;
+  text-decoration: none;
+}
+
+#main section h1 a:hover,
+#main section h1 a:focus,
+#main section section h2 a:hover,
+#main section section h2 a:focus {
+  color: #ece0b2;
+  text-decoration: none;
+}
+
+/* NAV */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffc600;
+  padding: 10px;
+  margin: 0px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #16cebb;
+}
+
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle .caret,
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: black;
+  background-color: #117d71;
+  background-image: linear-gradient(to left, #16cebb, #ff0023);
+}
+
+.container-fluid {
+  padding-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background: linear-gradient(to left, #117d71, #083c37) ! important;
+  font-family: 'Source Sans Pro', 'sans serif';
+}
+
+.pull-right {
+  margin: 0;
+}
+
+.profile-links {
+  padding: 25px;
+  align-items: flex-end;
+}
+
+form {
+  background: #ece0b2;
+  background-image: linear-gradient(to left, #f7f4e6, #ece0b2);
+  padding: 10px;
+  color: black;
+}
+
+.text-muted {
+    color: #083c37 !important;
+    font-style: italic;
+}
+
+@media only screen and (max-device-width:768px) {
+  #footer {
+    position: static;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+
+}
+
+.page-controls {
+    border-top: 0px;
+}
+
+/* sponsor page:
+
+   * constrain logos to page width for phones.
+   * should probably be made the default in wafer.
+*/
+
+.sponsor-detail div,
+.wafer-sponsor .card-title + div {
+    padding: 0.5em !important;
+    max-width: 100% !important;
+}
+
+.sponsor-detail div img,
+.wafer-sponsor .card-title + div img {
+    max-width: 100% !important;
+}
+
+/* Alerts */
+
+.alert-light {
+    background: #ffc600;
+    color: #5e141e;
+    border: 0;
+}
+
+.alert-primary {
+    background: #ff0023;
+    color: #f7f4e6;
+    border: 0;
+}
+
+.alert-light a {
+    color: #ce162f !important;
+}
+
+.alert-primary a {
+    color: #ffc600 !important;
+}
+
+.alert-light a:hover,
+.alert-light a:focus {
+    color: #ff0023 !important;
+}
+
+.alert-primary a:hover,
+.alert-primary a:focus {
+    color: #5e141e !important;
+}
+
+/* Collapse nested card divs on sponsor package and sponsors page */
+
+.wafer-sponsorship-package .card,
+.wafer-sponsorship-package .card-body,
+.wafer-sponsor .card,
+.wafer-sponsor .card-body {
+    border: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.wafer-sponsorship-package .card-title, 
+.wafer-sponsor .card-title {
+    padding: 5px 0 5px 20px !important;
+}
+
+.wafer-sponsor hr {
+    display: none;
+}
+
+.wafer-sponsors .wafer.list div:nth-child(2n) {
+    background: none;
+}
+
+.wafer-sponsor img {
+    background: none ! important;
+    border: 4px dashed #117d71;
+    border-radius: 25px;
+    padding: 10px;
+}

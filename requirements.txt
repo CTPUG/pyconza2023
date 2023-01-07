@@ -1,0 +1,6 @@
+wafer >= 0.14.0
+Django >=3.1
+psycopg2-binary
+mdx_outline
+mdx_attr_cols
+mdx_variables

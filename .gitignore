@@ -1,0 +1,11 @@
+# Created stuff for the pyconza site
+static/vendor
+node_modules/
+localstatic/
+localmedia/
+localsettings.py
+*uwsgi*
+ve/
+wsgi.py
+__pycache__/
+package-lock.json
