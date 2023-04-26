@@ -4,3 +4,4 @@ psycopg2-binary
 mdx_outline
 mdx_attr_cols
 mdx_variables
+mdx_staticfiles

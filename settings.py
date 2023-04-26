@@ -194,6 +194,7 @@ MARKITUP_FILTER = (
             "markdown.extensions.tables",
             "markdown.extensions.codehilite",
             "mdx_variables",
+            "mdx_staticfiles",
         ],
         "extension_configs": {
             "mdx_variables": {
