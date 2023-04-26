@@ -219,7 +219,7 @@ class OutlineExtension(Extension):
     def extendMarkdown(self, md):
         ext = OutlineProcessor(md)
         ext.config = self.config
-        md.treeprocessors.register(ext, 'outline', 0)
+        md.treeprocessors.register(ext, 'outline', 6)
 
 
 def makeExtension(configs={}):
