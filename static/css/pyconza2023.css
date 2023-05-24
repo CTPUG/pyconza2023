@@ -368,28 +368,6 @@ ul.navbar-nav li.icon a {
   padding: 12px;
 }
 
-/* SVG icon colour magic */
-
-.social-media-icon {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    mask-size: cover!important;
-    background: #fcf282!important;
-}
-
-.social-media-icon:hover {
-    background: #c96b9c!important;
-}
-
-.twitter-icon {
-    mask-image: url(../img/twitter.svg);
-}
-
-.mastodon-icon {
-    mask-image: url(../img/mastodon.svg);
-}
-
 /* override buttons */
 
 ul.btn-group {
