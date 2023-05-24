@@ -368,6 +368,11 @@ ul.navbar-nav li.icon a {
   padding: 12px;
 }
 
+/* dark magic to add matching hover colours to the icons */
+.nav-item.icon .nav-link:hover, .nav-item.icon .nav-link:focus {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(11%) saturate(2208%) hue-rotate(282deg) brightness(82%) contrast(90%);
+}
+
 /* override buttons */
 
 ul.btn-group {
