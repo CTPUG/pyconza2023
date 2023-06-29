@@ -182,7 +182,7 @@ def tutorial_osw_tickets_sold():
     return tickets_sold(_TUTORIAL_OSW_TICKET_TYPES)
 
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 MARKITUP_FILTER = (
     "markdown.markdown",
     {
