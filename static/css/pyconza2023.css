@@ -522,6 +522,7 @@ form {
   background-image: linear-gradient(to left, #ebcad8, #a7c4c2);
   padding: 10px;
   color: black;
+  border-radius: 25px;
 }
 
 .text-muted {
@@ -564,23 +565,25 @@ form {
 /* Alerts */
 
 .alert-light {
-    background: #e3f1f0;
-    color: #6a0f49;
-    border: 0;
+    background: #237771;
+    color: #e3f1f0;
+    font-weight: bold;
+    border: solid 2px #e3f1f0;
 }
 
 .alert-primary {
-    background: #97efe9;
+    background: #6a0f49;
     color: #ebcad8;
-    border: 0;
+    font-weight: bold;
+    border: solid 2px #ebcad8;
 }
 
 .alert-light a {
-    color: #237771 !important;
+    color: #e3f1f0 !important;
 }
 
 .alert-primary a {
-    color: #e3f1f0 !important;
+    color: #ebcad8 !important;
 }
 
 .alert-light a:hover,
@@ -590,7 +593,7 @@ form {
 
 .alert-primary a:hover,
 .alert-primary a:focus {
-    color: #6a0f49 !important;
+    color: #c96b9c !important;
 }
 
 /* Collapse nested card divs on sponsor package and sponsors page */
