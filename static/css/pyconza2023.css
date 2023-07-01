@@ -578,6 +578,13 @@ form {
     border: solid 2px #ebcad8;
 }
 
+.alert-danger {
+    background: #6a3c59;
+    color: #fcf282;
+    font-weight: bold;
+    border: solid 2px #fcf282;
+}
+
 .alert-light a {
     color: #e3f1f0 !important;
 }
