@@ -133,14 +133,9 @@ _ONLINE_TICKET_TYPES = [
     for tier in _TICKET_TIERS
     for kind in ("Online", "Online, Early Bird")
 ]
-_TUTORIAL_DEVOPS_TICKET_TYPES = [
-    "Tutorial: Bridging the Gap Between DevOps and Data Professionals (Durban)"
-]
-_TUTORIAL_GIS_TICKET_TYPES = [
-    "Tutorial: An Introduction to Web Mapping with Django (Durban)"
-]
-_TUTORIAL_OSW_TICKET_TYPES = [
-    "Tutorial: Pyladies Open Source Workshop"
+
+_TUTORIAL_AIRFLOW_TICKET_TYPES = [
+        'Airflow - beyond the basics (and also some basics) (Durban)'
 ]
 
 
@@ -167,19 +162,9 @@ def online_tickets_sold():
     return tickets_sold(_ONLINE_TICKET_TYPES)
 
 
-def tutorial_devops_tickets_sold():
+def tutorial_airflow_tickets_sold():
     """ Number of tickets sold for the devops tutorial. """
-    return tickets_sold(_TUTORIAL_DEVOPS_TICKET_TYPES)
-
-
-def tutorial_gis_tickets_sold():
-    """ Number of tickets sold for the Django GIS tutorial. """
-    return tickets_sold(_TUTORIAL_GIS_TICKET_TYPES)
-
-
-def tutorial_osw_tickets_sold():
-    """ Number of tickets sold for the Django OSW tutorial. """
-    return tickets_sold(_TUTORIAL_OSW_TICKET_TYPES)
+    return tickets_sold(_TUTORIAL_AIRFLOW_TICKET_TYPES)
 
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -202,11 +187,9 @@ MARKITUP_FILTER = (
                     "durban_tickets_sold": durban_tickets_sold,
                     "durban_tickets_remaining": durban_tickets_remaining,
                     "online_tickets_sold": online_tickets_sold,
-                    "tutorial_devops_tickets_sold": (
-                        tutorial_devops_tickets_sold
+                    "tutorial_airflow_tickets_sold": (
+                        tutorial_airflow_tickets_sold
                     ),
-                    "tutorial_gis_tickets_sold": tutorial_gis_tickets_sold,
-                    "tutorial_osw_tickets_sold": tutorial_osw_tickets_sold,
                 }
             }
         },
