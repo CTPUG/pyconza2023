@@ -122,7 +122,7 @@ WAFER_MENUS += (
 )
 
 
-_TICKET_TIERS = ("Student", "Pensioner", "Individual", "Corporate")
+_TICKET_TIERS = ("Student", "Pensioner", "Individual", "Corporate", "Sponsored")
 _DURBAN_TICKET_TYPES = [
     f"{tier} ({kind})"
     for tier in _TICKET_TIERS
